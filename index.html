@@ -26,9 +26,9 @@
             <nav class="right-section" >
               <ul type="none" class="nav-links" >
               <li ><a class="link" href="index.html">Home </a> </li>
-              <li><a class="link" href="time-table.html">Plan your day</a> </li>
-              <li ><a class="link" href="zenbreak_page.html">Zen Break </a> </li>
-              <li ><a class="link" href="review-page.html"> Day Review </a> </li>
+              <li><a class="link" href="time-table.html">Planning</a> </li>
+              <li ><a class="link" href="zenbreak_page.html">Break </a> </li>
+              <li ><a class="link" href="review-page.html"> Review </a> </li>
               </ul>
               
             </nav>
@@ -61,25 +61,25 @@
 
         <div class="features-classification">
 
-          <div class="feature">
+          <div class="feature schedule-page">
             <img class="feature-icon" src="images/Schedule_icon.jpeg" alt="Schedule icon" >
             <h3 class="schedule-head"> Daily Schedule</h3>
             <p class="feature-explaination">Plan your Day</p>
           </div>
 
-          <div class="feature">
+          <div class="feature breakpage">
             <img class="feature-icon" src="images/break_time_icon.jpg" alt="Schedule icon" >
             <h3 class="schedule-head"> Break Time</h3>
             <p class="feature-explaination">Built-in Lofi player,Fun Game and more.. for Break time</p>
           </div>
 
-          <div class="feature">
+          <div class="feature breakpage">
             <img class="feature-icon" src="images/motivation_icon.jpg" alt="Schedule icon" >
             <h3 class="schedule-head"> Motivation boost</h3>
             <p class="feature-explaination">Get inspired everyday</p>
           </div>
 
-          <div class="feature">
+          <div class="feature review">
             <img class="feature-icon" src="images/review_icon.png" alt="Schedule icon" >
             <h3 class="schedule-head"> Day review</h3>
             <p class="feature-explaination">Reflect how you feel daily</p>
@@ -102,6 +102,27 @@
     startNowBtn.addEventListener('click',()=>{
       window.location.href='time-table.html';
     })
+
+    const feature_schedule= document.querySelector('.schedule-page');
+    const feature_break= document.querySelectorAll('.breakpage');
+    const feature_review= document.querySelector('.review');
+
+    feature_schedule.addEventListener('click',()=>{
+      window.location.href='time-table.html';
+    });
+
+      feature_break.forEach(feature=>{
+           feature.addEventListener('click',()=>{
+            window.location.href='zenbreak_page.html'
+           })
+      })
+
+
+     feature_review.addEventListener('click',()=>{
+      window.location.href='review-page.html';
+    })
+    
+
 
 
 

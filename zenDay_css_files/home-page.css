@@ -252,6 +252,10 @@ font-family:Roboto,sans serif;
 
 }
 
+.feature{
+    cursor: pointer;
+}
+
 .features-heading{
     font-family:Roboto,sans serif;
     font-size:40px;
@@ -334,6 +338,9 @@ font-family:Roboto,sans serif;
 
 
 @media (max-width:500px){
+ 
+
+   
 
    .left-section{
      margin-left:20px;
@@ -368,7 +375,8 @@ font-family:Roboto,sans serif;
 .link{
    
     font-weight:bold;
-    font-size:12px;
+    font-size:6px;
+    text-decoration:underline;
 }
 
 .opening-section{
