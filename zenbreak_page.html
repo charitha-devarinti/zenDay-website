@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ZenDay | Plan. Refelct. Grow</title>
+    <link rel="icon" href="images/zenday-logo.png" type="image/x-icon" sizes="16x16">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="zenDay_css_files/zenbreak_page.css">
+
+   </head>
+   <body>
+       <header class="header">
+            <div class="left-section">
+              <img class="logo" src="images/zenday-logo.png" alt="ZenDay logo">
+              <h1 class="name"> ZenDay</h1>
+              <p class="sub-title">Plan. Reflect. Grow</p>
+            </div>
+            <nav class="right-section" >
+              <ul type="none" class="nav-links" >
+               <li ><a class="link" href="index.html">Home </a> </li>
+              <li><a class="link" href="time-table.html">Plan your day</a> </li>
+              <li ><a class="link" href="zenbreak_page.html">Zen Break </a> </li>
+              <li ><a class="link" href="review-page.html"> Day Review </a> </li>
+              </ul>
+            </nav>
+           
+        </header>
+
+       
+
+      <div class="opening-section">
+       <h1 class="opening">  ZenBreak </h1>
+       <p class="purpose">" Pause with Purpose : Your Break, Your Way "</p>
+       <p class="quote"> " Rest is not a reward , it's responsibility - greatness needs recovery "</p>
+       <p class="quote"> " Sometimes, the best ideas come when you stop chasing them "</p>
+      </div>
+
+
+     <div class="need_of_breaks">
+      <h1 class="need-breaks-heading"> Why we Need Breaks? What Scientific reasons behind it?</h1>
+      <h2 id="heading" class="breaks_heading"></h2>
+      <p id="description" class="breaks-description"></p>
+
+     </div>
+
+
+      <div class="breaks-section">
+        <div class="five-min-section">
+          <h2 class="five-min-heading"> 5 Minutes Break <span class="label">for Quick Refresh</span></h2>
+          
+          <div class="features-box">
+            <div class="music">
+              <img class="pic" src="images/music_pic.png">
+              <h4>Music</h4>
+              <p>Let the rhythm relax your mind and elevate your mood</p>
+              <button class="music-button js-music-button">Play Music</button>
+            </div>
+
+
+            <div class="motivation-vedios">
+              <img class="pic" src="images/motivation_image.png">
+              <h4> Motivational Videos</h4>
+              <p>Stories and words to keep you moving forward</p>
+              <button class="video-buttton js-video-button"> Watch Motivation Videos</button>
+            </div>
+
+            <div class="meditation">
+              <img class="pic meditation-pic" src="images/mediation_pic.png">
+              <h4>Meditation</h4>
+              <p>A few minutes of calm to reconnect with yourself</p>
+              <button class="meditation-button js-meditaion-button">Click for Meditation</button>
+            </div>
+
+            <div class="emoji">
+              <img class="pic" src="images/emoji_pic.jpg">
+              <h4> Find and Imitate Emoji</h4>
+              <p>A quick fun challenge —  Find and copy the emoji face and smile</p>
+              <button class="emoji-button js-emoji-button">Play Emoji Imitation</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="ten-nap-container">
+            <div class="ten-minute">
+              <h3 class="break-head"> 10 min Break </h3>
+              <p>Boost your brain</p>
+              <div class="ten-min-features">
+               <div class="songs-ten-sec">
+              <img  class="music-pic" src="images/music_pic.png">
+               <h4 class="feature-head">Music</h4>
+              <p>Music to refocus, recharge, and stay motivated for the next stretch</p>
+              
+              <button class="songs-button">Play music</button>
+             </div>
+               
+              <div class="brain-excer">
+                
+              <img  class="brain-pic" src="images/brain_excercise_pic.jpeg">
+              <h4 class="feature-head"> Brain Exercises</h4>
+              <p>Activate your brain with mini tasks that improve focus and memory</p>
+              <button class="brain-excercise-button">Start Brain Excercise</button>
+             </div>
+
+
+              </div>
+            
+            </div>
+           
+
+
+             <div class="nap-section">
+              <h3 class="break-head"> Nap Break </h3>
+              <p>Power Nap</p>
+             <div class="songs-nap">
+              <img  class="nap-pic" src="images/power_nap_pic.avif">
+               <h4 class="feature-head">Nap with Music</h4>
+              <p>The ideal time for a restful nap — proven to boost memory & mood</p>
+              <button class="nap-song-but">Play music</button>
+
+             </div>
+            </div>
+
+
+          </div>
+
+
+
+
+          <div class="min5-musics js-break-content" id="fivemin-songs"  style="display:none">
+            <h2 class="min5-head">  5 minutes Relax with music</h2>
+            <p class="min5-about">Soft tunes to help you unwind and reset</p>
+            <div class="time-container">
+               <p class="timer" data-time="5">05:00</p>
+            </div>
+           
+            <div class="song-container-5min">
+              <div class="songs-5min">
+
+              <audio controls id="song-1">
+              <source src="audios_videos/song1.m4a" type="audio/mpeg" >
+            </audio>
+
+            <p class="audio-title"> 5 Minutes Lofi music</p>
+            </div>
+
+            <div class="songs-5min">
+
+              <audio controls id="song-2" >
+              <source src="audios_videos/song2.mp3" type="audio/mpeg"  >
+            </audio>
+
+            <p class="audio-title"> 5 Minutes relax music</p>
+            </div>
+
+            <div class="songs-5min">
+
+              <audio controls id="song-3">
+              <source src="audios_videos/song3.m4a" type="audio/mpeg" >
+            </audio>
+
+            <p class="audio-title"> 5 Minutes Flute music</p>
+            </div>
+            </div>
+           
+          </div>
+
+
+          <div class="min5-motivation js-break-content" id="fivemin-motivation"  style="display:none" >
+            <h2>5 Minutes:  Quick Confidence Boost</h2>
+            <p>You don't have to be great to start, but you have to start to be great <span>— Zig Ziglar</span></p>
+            <div class="motivation-timer">
+              <p class="timer" data-time="5"> 05:00 </p>
+            </div>
+            
+            <div class="motivation-5min">
+              <div class="video-5min">
+                  <video controls height="300px" width="300px" id="video1">
+                    <source src="audios_videos/video1.mp4" type="video/mp4">
+                  </video>
+                  <p> Danzel washington's motivation speech</p>
+              </div>
+
+               <div class="video-5min">
+                  <video controls height="300px" width="300px" id="video2">
+                    <source src="audios_videos/video2.mp4" type="video/mp4">
+                  </video>
+                  <p>Belive your self</p>
+              </div>
+
+               <div class="video-5min">
+                  <video controls height="300px" width="300px" id="video3">
+                    <source src="audios_videos/video3.mp4" type="video/mp4">
+                  </video>
+                  <p> Discover your inner strength</p>
+              </div>
+             
+            </div>
+             <p class="motive-quote"><em>"Stuck with a decision? Pause for a moment. Think about the times you felt truly appreciated — and the things that made you genuinely happy while doing them. That’s your answer. Take a breath, and reconnect with yourself."</em></p>
+          </div>
+
+          <div class="min5-meditation js-break-content"  id="fivemin-meditation"  style="display:none">
+            <h2 class="meditation-heading"> 5 Minutes to Inner Peace</h2>
+            <p>"Quiet the mind, and the soul will speak."-- Ma Jaya Sati Bhagavati</p>
+            <div class="meditation-timer">
+             <p class="timer" data-time="5">05:00</p>
+            </div>
+            
+            <div class="meditation-content">
+              <p class="meditaion-animation-text">inhale</p>
+            </div>
+            <p class="breathing-text"> Inhale-- Hold-- Exhale-- </p>
+            
+          </div>
+
+
+
+         <div class="emoji-game-section js-break-content" id="fivemin-fungame"   style="display:none">
+          
+          <h2> 5 Minutes : Funny Game</h2>
+          <div class="game-timer">
+            <p class="timer" data-time="5">05:00</p>
+          </div>
+          
+
+          <div class="emoji-game-heading">
+            <img class="hidden-emoji" src="images/hide_emoji.png"  width="80px" height="80px">
+            <h3 class="about-game"> I hidden somewhere else Between the numbers 1 to 10 - Find me and Imitate me</h3>
+            
+          </div>
+
+          <div class="input-section">
+                <input  class="input-num" placeholder="Number between 1 to 10" > 
+            <button class="submit-btn">Submit</button>
+            </div>
+            <div class="gif-container">
+            
+            </div>
+            <p class="result js-result"> </p>
+            <p class="display-result  js-display-result"> </p>
+          
+        
+         </div>
+
+        
+        <div class="min10-musics js-ten-break-content js-break-content" id="tenmin-songs" style="display:none;" >
+            <h2 class="min10-head"> 10 Minutes of Music, 100% More Energy </h2>
+            <div class="min10-song-timer">
+               <p class="timer" data-time="10">10:00</p>
+            </div>
+          
+           
+            <div class="song-container-10min">
+              <div class="songs-10min">
+              <audio controls>
+              <source src="audios_videos/song4.mp3" type="audio/mpeg">
+            </audio>
+            <p class="audio-title"> 10 Minutes relax music</p>
+            </div>
+
+            <div class="songs-10min">
+              <audio controls >
+              <source src="audios_videos/song5.mp3" type="audio/mpeg">
+            </audio>
+            <p class="audio-title"> 10 Minutes relax music</p>
+            </div>
+
+            <div class="songs-10min">
+              <audio controls >
+              <source src="audios_videos/song6.mp3" type="audio/mpeg">
+            </audio>
+            <p class="audio-title"> 10 Minutes relax music</p>
+            </div>
+            </div>
+           
+        </div>
+
+
+
+          <div class="min10-excercise js-ten-break-content js-break-content" id="tenmin-excercise" style="display: none;" >
+            <h2 class="excercise-heading">Recharge Your Mind in 10 minutes by doing Brain Excercise</h2>
+            <p class="about-excercise">A few minutes of mental movement can spark hours of clarity</p>
+            <div class="excercise-timer">
+               <p class="timer" data-time="10">10:00</p>
+            </div>
+            
+            <div class="excercise-10min">
+              <div class="video-10min" >
+                  <video controls height="300px" width="300px" id="excercise-1">
+                    <source src="audios_videos/excercise1.mp4" type="video/mp4">
+                  </video>
+                  
+              </div>
+
+               <div class="video-10min">
+                  <video controls height="300px" width="300px" id="excercise-2">
+                    <source src="audios_videos/excercise2.mp4" type="video/mp4">
+                  </video>
+                 
+              </div>
+
+               <div class="video-10min">
+                  <video controls height="300px" width="300px" id="excercise-3">
+                    <source src="audios_videos/excercise3.mp4" type="video/mp4">
+                  </video>
+               
+              </div>
+             
+            </div>
+           
+          </div>
+
+
+
+          <div class="nap-section-break js-nap-break js-break-content" id="nap-break" style="display: none;">
+            <h2 class="nap-heading">Recharge Your Mind with a 20 minute Power Nap</h2>
+            <p class="about-nap">"A short nap is not a sign of laziness—it’s an investment in productivity and well-being."</p>
+            
+             <img src="images/sleep_image.webp" class="sleeping-image">
+
+            
+            <div class="nap-timer">
+               <p class="timer" data-time="20"> 20:00</p>
+            </div>
+           
+
+            <div class="alaram-section js-alaram-section" style="display: none;">
+              <img src="emojies/sun-gif.gif" class="wake-up-gif">
+              
+            </div>
+
+          </div>
+
+
+      <div class="footer">
+        <p class="footer-name">Your's <strong> ZenDay</strong></p>
+        <p class="footer-text"> © 2025 | All rights reserved</p>
+
+      </div>
+
+        
+
+
+
+
+
+
+
+
+         <script src="zenDay_js_files/zenbreak_page.js"></script>
+        </body>
+        </html>

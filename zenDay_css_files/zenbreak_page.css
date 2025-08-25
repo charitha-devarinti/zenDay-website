@@ -1,0 +1,2306 @@
+ body{
+    font-family:sans-serif;
+    margin:0;
+   
+}
+
+/* header Section */
+
+.header{
+    background-color: #f6f9fc;
+    height:80px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    box-shadow:3px 3px 5px rgba(0,0,0,0.1);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
+    
+}
+
+
+.left-section{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    gap:15px;
+    width:400px;
+    margin-left:100px;
+    
+    padding-left:35px;
+   
+
+}
+
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius: 30px;
+    animation: zoom-in-out 4s ease-in-out  infinite;
+   
+}
+
+@keyframes zoom-in-out{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+}
+
+.name{
+   background: linear-gradient( 91.7deg,  rgb(119, 134, 2) 6.9%, rgb(238, 29, 151) 49%, rgba(108,114,241,1) 90% );
+   ;
+     -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+font-family:Roboto,sans serif;
+}
+ 
+
+.sub-title{
+    margin-top:50px;
+     background: linear-gradient(to top right, blue, green);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+}
+
+.right-section{
+  
+   margin-right:40px;
+    width:500px;
+}
+
+.nav-links{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+   margin-top:30px;
+    
+}
+
+.link{
+    color:rgb(81, 81, 81);
+    font-weight:bold;
+    font-size:17px;
+    cursor:pointer;
+    transition:color 0.3s  text-decoration 0.3s ease;
+    font-family:open sans, sans serif;
+    text-decoration: none;
+}
+
+.link:hover{
+   color:rgb(31, 31, 246);
+   text-decoration: underline;
+}
+
+
+
+/* opening section */
+
+.opening-section{
+   margin:auto;
+    margin-top:100px;
+    background: linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    width:1000px;
+    height:200px;
+    text-align: center;
+   
+   padding-top:10px;
+   padding-bottom:10px;
+   border-radius:20px;
+   box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+    
+}
+
+.opening{
+    font-size:50px;
+    font-family:Roboto,sans serif;
+    margin-bottom:5px;
+}
+
+.purpose{
+    font-size:16px;
+    margin-top:0px;
+}
+
+.quote{
+    font-size:18px;
+}
+
+/* why we need breaks section */
+
+.need_of_breaks{
+    width:1400px;
+    background: linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    margin:auto;
+    text-align: center;
+    margin-top:30px;
+    padding-top:20px;
+    padding-bottom:50px;
+    border-radius:10px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+    
+}
+
+.breaks_heading{
+    margin-top:50px;
+}
+
+.breaks-description{
+    font-size:20px;
+    margin-right:70px;
+    margin-left:70px;
+}
+
+
+
+
+/* breaks section */
+.five-min-section{
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    width:1000px;
+    margin:auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+   text-align:center;
+   margin-top:30px;
+}
+
+.five-min-heading{
+    font-size:30px;
+}
+
+.label{
+    font-weight:normal;
+    font-size:20px;
+}
+
+.pic{
+    height:70px;
+    width:70px;
+    border-radius:10px;
+}
+.meditation-pic{
+    width:80px;
+}
+
+.features-box{
+    display:grid;
+    grid-template-columns: 300px 300px  ;
+    gap:20px;
+    align-items:center;
+    justify-content: center;
+   
+}
+
+.music, .motivation-vedios, .meditation, .emoji{
+    background:rgb(255, 253, 253);
+    padding:15px; 
+    padding-bottom:25px;
+    border-radius:15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 2s ease box-shadow 1s ease;
+}
+
+.music:hover,.motivation-vedios:hover, .meditation:hover, .emoji:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+
+
+.music-button, .video-buttton, .meditation-button, .emoji-button{
+     background-color: #0293e1;
+    color:white;
+    border:none;
+    padding:15px 20px;
+    font-size:15px;
+    font-weight:bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    cursor:pointer;
+    transition: background-color 0.5s;
+    animation: zoom-in-out 3s ease infinite;
+}
+
+.music-button:hover, .video-buttton:hover , .meditation-button:hover , .emoji-button:hover{
+    background-color:  #024cab;
+
+}
+
+@keyframes zoom-in-out{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+}
+
+.features-box h4{
+    font-family:Roboto,sans serif;
+}
+
+/* ten and 20 min nap section */
+
+.ten-nap-container{
+   margin:auto;
+    margin-top:50px;
+    width:1300px;
+    text-align:center;
+    background-color: white;
+    display:grid;
+    grid-template-columns: 700px 400px;
+    gap:18px;
+    padding:50px;
+    padding-bottom:80px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+   
+}
+
+.ten-minute{
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% );  
+    padding-bottom:50px;
+    margin-left:50px;
+    border-radius: 10px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.nap-section{
+    background-color: #f6f9fc;
+}
+
+.ten-min-features{
+    display:grid;
+    grid-template-columns: 250px 250px;
+    
+    gap:15px;
+    margin-left:50px;
+    padding-bottom:30px;
+   
+    
+}
+
+.songs-ten-sec, .brain-excer{
+    background-color: white;
+    border-radius: 10px;
+     box-shadow:2px 2px 5px rgba(0,0,0,0.2); ;
+}
+
+.songs-ten-sec{
+    margin-left:20px;
+    padding:20px;
+     transition: transform 2s ease box-shadow 1s ease;
+}
+
+.brain-excer{
+    margin-left:20px;
+    padding:20px;
+     transition: transform 2s ease box-shadow 1s ease;
+}
+
+.nap-section{
+    margin-left:50px;
+    width:400px;
+    padding:50px;
+    padding-top:0px;
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    border-radius: 10px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.2); 
+
+}
+
+.songs-nap{
+    background-color: white;
+    height:300px;
+     border-radius: 10px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.2); 
+     transition: transform 2s ease box-shadow 1s ease;
+     padding-bottom:20px;
+
+}
+
+.songs-ten-sec:hover, .brain-excer:hover,.songs-nap:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);   
+}
+
+
+
+
+.music-pic, .brain-pic {
+    width:80px;
+    height:80px;
+    border-radius: 30px;
+}
+
+.nap-pic{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+    margin-top:20px;
+    border-radius: 30px;
+}
+
+.songs-button,.brain-excercise-button, .nap-song-but{
+     background-color: #0293e1;
+    color:white;
+    border:none;
+    padding:15px 15px;
+    font-size:15px;
+    font-weight:bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    cursor:pointer;
+     transition: background-color 0.5s;
+    animation: zoom-in-out 3s ease infinite;
+
+}
+
+.brain-excercise-button{
+    margin-top:15px;
+}
+
+.songs-button:hover ,.brain-excercise-button:hover, .nap-song-but:hover{
+          background-color:  #024cab;
+
+}
+
+
+.break-head{
+    font-family: Roboto,sans-serif;
+    font-size:25px;
+}
+
+.feature-head{
+     font-family: Roboto,sans-serif;
+    font-size:20px;
+}
+
+/* 5 minutes break section songs */
+
+.min5-musics{
+    width:1200px;
+    margin:auto;
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    text-align:center;
+    padding:50px;
+    padding-bottom: 50px;
+    margin-top:30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    position:relative;
+    
+   
+}
+
+.time{
+    margin-left:1100px;
+    position:absolute;
+    top:5%;
+    left:0%;
+    padding:15px;
+    padding-right:30px;
+    padding-left:30px;
+    background-color: white;
+    font-size:30px;
+    font-weight:bold;
+    
+}
+
+.min5-head{
+    font-size:30px;
+}
+
+.min5-about{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+
+
+
+.song-container-5min{
+    display:flex;
+    flex-direction: row;
+   justify-content: center;
+   gap:15px;
+}
+
+.songs-5min{
+    background-color: white;
+    height:250px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+audio{
+    margin-top:100px;
+}
+
+
+/* 5min motivation section */
+
+.min5-motivation{
+    text-align: center;
+    width:1200px;
+    margin:auto;
+    margin-top:50px;
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    border-radius:15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position:relative;
+}
+
+.time{
+    position:absolute;
+    top:8%;
+   left:-6%;
+}
+
+
+.motivation-5min{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+
+.motive-quote{
+    margin-left:30px;
+    margin-right:30px;
+}
+
+/* 5 minutes meditation section */
+
+.min5-meditation{
+    width:1200px;
+     background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+     margin:auto;
+     text-align: center;
+     height:400px;
+     padding-top: 50px;
+     margin-top:20px;
+     padding-bottom: 20px;
+     border-radius: 15px;
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+     position:relative;
+
+}
+
+.meditation-content{
+     width:200px;
+     height:200px;
+    background-color: #024cab;
+    border-radius:50%;
+    margin-left:500px;
+    margin-top:50px;
+    animation: exhale-inhale 16s ease-in-out infinite;
+}
+
+.meditaion-animation-text{
+   padding-top:85px;
+   color:white;
+   font-size:18px;
+   
+}
+
+.breathing-text{
+    margin-top:50px;
+    font-size:20px;
+}
+
+
+@keyframes exhale-inhale{
+    0%{
+         transform: scale(1);
+    }
+    25%{
+        transform:scale(1.2); /* inhale */
+    }
+
+  50%{
+        transform:scale(1.2);  /* hold */
+    }
+
+ 
+    75%{
+        transform: scale(1);   /* exhale */
+    }
+
+     100%{
+        transform: scale(1);   /* hold */
+    }
+
+}
+
+
+
+/* Emoji Game */
+
+.emoji-game-section{
+    width:1200px;
+    margin:auto;
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:70px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+
+.emoji-game-heading{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+   
+}
+
+.input-section{
+    display:flex;
+    justify-content: center;
+    margin-bottom:30px;
+}
+
+.input-num{
+    width:300px;
+    text-align: center;
+    padding:15px;
+    font-size:18px;
+}
+
+.submit-btn{
+    background-color: #0293e1;
+    color:white;
+    padding:20px;
+    border-radius: 15px;
+    border:none;
+    margin-left:20px;
+    font-weight: bold;
+    font-size:20px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover{
+      background-color:  #024cab;
+
+}
+
+
+.result {
+     text-align: center;
+     font-size:20px;
+}
+
+.display-result{
+    text-align: center;
+     font-size:20px;
+}
+
+
+/* 10 minutes break section songs */
+
+.min10-musics{
+    width:1200px;
+    margin:auto;
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    text-align:center;
+    padding:50px;
+    padding-bottom: 50px;
+    margin-top:30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    position:relative;
+    
+   
+}
+
+.timer{
+    margin-left:1100px;
+    position:absolute;
+    top:5%;
+    left:0%;
+    padding:15px;
+    padding-right:30px;
+    padding-left:30px;
+    background-color: white;
+    font-size:30px;
+    font-weight:bold;
+    
+}
+
+.min10-head{
+    font-size:30px;
+}
+
+.min10-about{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+
+
+
+.song-container-10min{
+    display:flex;
+    flex-direction: row;
+   justify-content: center;
+   gap:15px;
+   margin-top:50px;
+}
+
+.songs-10min{
+    background-color: white;
+    height:250px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+audio{
+    margin-top:100px;
+}
+
+
+/* 10 minutes brain excercise section*/
+
+.min10-excercise{
+    text-align: center;
+    width:1200px;
+    margin:auto;
+    margin-top:50px;
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    border-radius:15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position:relative;
+}
+
+.timer{
+    position:absolute;
+    top:8%;
+   left:-6%;
+}
+
+
+.excercise-10min{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+
+/* nap section */
+
+.nap-section-break{
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    width:1300px;
+    margin:auto;
+    text-align: center;
+    padding-top:30px;
+    margin-top:50px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    position:relative;
+}
+
+.nap-time{
+    background-color: white;
+    padding:20px;
+    position:absolute;
+    top:10px;
+    right:40px;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.sleeping-image{
+   
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.alaram-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:20px;
+}
+
+.wake-up-gif{
+    width:500px;
+    height:500px;
+}
+
+
+
+/* footer section */
+.footer{
+    margin-top:30px;
+    background-color: rgb(246, 244, 244);
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:20px;
+    line-height:6px;
+}
+
+.footer-text{
+    font-size:16px;
+   
+}
+
+
+
+@media (max-width:500px){
+
+   .left-section{
+     margin-left:20px;
+     padding-left:10px;
+
+   }
+    .logo{
+        width:40px;
+        height:40px;
+
+        
+    }
+    .name{
+        font-size:25px;
+       
+    }
+    .sub-title{
+        font-size:12px;
+      
+       
+    }
+    
+
+  .nav-links{
+  
+    flex-direction:column;
+    gap:0px;
+    margin-top:5px;
+    margin-left: 60px; 
+}
+
+.link{
+   
+    font-weight:bold;
+    font-size:12px;
+}
+
+.opening-section{
+  
+    width:300px;
+   padding:15px;
+   border-radius: 10px;
+    
+}
+
+.opening{
+    font-size:25px;
+    margin-bottom: 10px;
+  
+}
+
+.purpose{
+    font-size:14px;
+    margin-top:0px;
+}
+
+.quote{
+    font-size:14px;
+}
+
+
+.need_of_breaks{
+    width:300px;
+    
+    
+}
+
+.breaks_heading{
+    margin-top:20px;
+    font-size:20px;
+    
+}
+
+.breaks-description{
+    font-size:16px;
+    margin-right:70px;
+    margin-left:70px;
+}
+
+.need-breaks-heading{
+    font-size: 25px;
+
+}
+
+.five-min-section{
+    
+    width:300px;
+    margin:auto;
+   margin-top:30px;
+}
+
+.five-min-heading{
+    font-size:25px;
+}
+
+.label{
+    font-weight:normal;
+    font-size:18px;
+}
+
+
+.features-box{
+    grid-template-columns:auto ;
+    gap:10px; 
+   
+}
+
+
+.ten-nap-container{
+  
+    width:300px;
+   
+    grid-template-columns: auto;
+    gap:20px;
+
+   
+}
+
+.ten-minute{
+    width:280px;
+   
+    margin-left:10px;
+   
+}
+
+.ten-min-features{
+
+    grid-template-columns: auto;
+   
+    gap:15px;
+    margin:auto;
+    padding-bottom:10px;
+   
+    
+}
+
+.songs-ten-sec, .brain-excer{
+     width:200px;
+}
+
+
+.brain-excer{
+    margin-left:20px;
+    
+}
+
+.nap-section{
+    
+    width:280px;
+    padding:20px;
+   margin:auto;
+
+}
+
+
+.min5-musics{
+    width:300px;
+  
+   position:relative;
+
+   
+}
+
+.time-container{
+    position:absolute;
+    top:-3%;
+    left:-970px;
+    margin-top:10px;
+
+
+}
+
+.time{
+   
+    padding:10px;
+    padding-right:10px;
+    padding-left:10px;
+    
+    font-size:15px;
+   
+    
+}
+
+.min5-head{
+    font-size:25px;
+    margin-top:40px;
+}
+
+.min5-about{
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+
+
+
+.song-container-5min{
+   
+    flex-direction:column;
+   
+}
+
+.songs-5min{
+    background-color: white;
+
+    padding-left:15px;
+    padding-right:15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+audio{
+    margin-top:100px;
+    width:280px;
+}
+
+
+.min5-motivation{
+   
+    width:300px;
+  margin:auto;
+  margin-top:30px;
+  padding:15px 15px;
+  padding-top:60px;
+
+  
+    position:relative;
+}
+
+.motivation-timer{
+    position:absolute;
+    top:-2%;
+   left:-1000px;
+   margin-top:10px;
+}
+
+
+.motivation-5min{
+  
+    flex-direction: column;
+    
+    gap:10px;
+}
+
+.motive-quote{
+    margin-left:30px;
+    margin-right:30px;
+}
+
+
+
+.min5-meditation{
+    width:300px;
+    
+     margin:auto;
+      margin-top:70px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 100px;
+
+     position:relative;
+
+}
+
+
+
+
+.meditation-timer{
+    position: absolute;
+    top:-5%;
+    left:-1000px;
+   
+}
+
+
+
+
+.meditation-content{
+     width:100px;
+     height:100px;
+   position:absolute;
+   left:-120%;
+  
+  
+  
+}
+
+.meditaion-animation-text{
+  
+   margin-top:-40px;
+   
+   
+}
+
+
+.breathing-text{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+.emoji-game-section{
+    width:300px;
+    margin:auto;
+    margin-top:30px;
+    
+    position: relative;
+    padding-top:100px;
+}
+.game-timer{
+   position: absolute;
+   top:-2%;
+   left:-1010px;
+}
+
+.emoji-game-heading{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+   
+}
+
+.hidden-emoji{
+    width:50px;
+    height:50px;
+    
+}
+
+.about-game{
+    font-size:14px;
+}
+
+
+.input-num{
+    width:150px;
+    text-align: center;
+    padding:5px;
+    font-size:12px;
+}
+
+
+.submit-btn{
+   
+    font-size:14px;
+    padding:10px;
+    border-radius: 5px;
+  
+}
+
+.gif-container img{
+     width:150px;
+     height:150px;
+}
+
+
+.result {
+   
+     font-size:14px;
+}
+
+.display-result{
+  
+     font-size:14px;
+}
+
+
+.min10-musics{
+    width:300px;
+    margin:auto;
+    
+   padding-top:70px;
+    margin-top:30px;
+   
+    position:relative;
+    
+   
+}
+
+.min10-song-timer{
+    position:absolute;
+    top:-2%;
+    left:-970px;
+}
+
+
+
+.min10-head{
+    font-size:25px;
+}
+
+
+
+
+.song-container-10min{
+    
+    flex-direction:column;
+   
+   gap:15px;
+   
+}
+
+.min10-excercise{
+   
+    width:300px;
+    margin:auto;
+    margin-top:50px;
+    
+    position:relative;
+    padding-top: 70px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.excercise-timer{
+    position: absolute;
+    top:-2%;
+    left:-1000px;
+}
+
+.excercise-heading{
+    font-size:25px;
+}
+
+
+.excercise-10min{
+   
+    flex-direction: column;
+  
+    gap:15px;
+}
+
+
+.nap-section-break{
+   
+    width:300px;
+    margin:auto;
+    
+    padding-top:70px;
+    margin-top:50px;
+    padding-right:10px;
+    padding-left:10px;
+   
+    position:relative;
+}
+
+.nap-heading{
+    font-size:25px;
+}
+
+.nap-timer{
+    position:absolute;
+    top:-4%;
+    left:-1000px;
+}
+
+.sleeping-image{
+   height:260px;
+   width:260px;
+
+}
+
+.alaram-section{
+   
+   
+    width:250px;
+    height:250px;
+  
+}
+
+.wake-up-gif{
+    width:200px;
+    height:200px;
+    text-align: center;
+}
+
+
+
+}
+
+
+
+@media(min-width:501px) and (max-width:755px){
+
+
+   .left-section{
+     margin-left:20px;
+     padding-left:10px;
+
+   }
+    .logo{
+        width:45px;
+        height:45px;
+
+        
+    }
+    .name{
+        font-size:30px;
+       
+    }
+    .sub-title{
+        font-size:16px;
+       
+       
+    }
+    
+
+  .nav-links{
+  
+    flex-direction:column;
+    gap:0px;
+    margin-top:5px;
+    margin-left: 70px; 
+}
+
+.link{
+   
+
+    font-size:14px;
+}
+
+
+.opening-section{
+  
+    width:500px;
+   padding:15px;
+   border-radius: 10px;
+    
+}
+
+.opening{
+    font-size:30px;
+    margin-bottom: 10px;
+  
+}
+
+.purpose{
+    font-size:16px;
+    margin-top:0px;
+}
+
+.quote{
+    font-size:16px;
+}
+
+
+.need_of_breaks{
+    width:500px;
+    
+    
+}
+
+.breaks_heading{
+    margin-top:25px;
+    font-size:20px;
+    
+}
+
+.breaks-description{
+    font-size:16px;
+    margin-right:70px;
+    margin-left:70px;
+}
+
+.need-breaks-heading{
+    font-size: 25px;
+
+}
+
+.five-min-section{
+    
+    width:500px;
+    margin:auto;
+   margin-top:30px;
+}
+
+.five-min-heading{
+    font-size:30px;
+}
+
+.label{
+    font-weight:normal;
+    font-size:18px;
+}
+
+
+.features-box{
+    grid-template-columns:auto ;
+    gap:10px; 
+   
+}
+
+
+.ten-nap-container{
+  
+    width:500px;
+   
+    grid-template-columns: auto;
+    gap:20px;
+
+   
+}
+
+.ten-minute{
+    width:480px;
+   
+    margin-left:10px;
+   
+}
+
+.ten-min-features{
+
+    grid-template-columns: auto;
+   
+    gap:15px;
+    margin:auto;
+    padding-bottom:10px;
+   
+    
+}
+
+.songs-ten-sec, .brain-excer{
+   width:400px;
+}
+
+
+.brain-excer{
+    margin-left:20px;
+    
+}
+
+.nap-section{
+    
+    width:480px;
+    padding:20px;
+   margin:auto;
+
+}
+
+
+
+.min5-musics{
+    width:500px;
+  
+   position:relative;
+
+   
+}
+
+.time-container{
+    position:absolute;
+    top:-3%;
+    left:-880px;
+    margin-top:10px;
+
+
+}
+
+.time{
+   
+    padding:10px;
+    padding-right:10px;
+    padding-left:10px;
+    
+    font-size:15px;
+   
+    
+}
+
+.min5-head{
+    font-size:25px;
+    margin-top:40px;
+}
+
+.min5-about{
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+
+
+
+.song-container-5min{
+   
+    flex-direction:column;
+   
+}
+
+.songs-5min{
+    background-color: white;
+
+    padding-left:15px;
+    padding-right:15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+audio{
+    margin-top:100px;
+    width:280px;
+}
+
+
+.min5-motivation{
+   
+    width:500px;
+  margin:auto;
+  margin-top:30px;
+  padding:15px 15px;
+  padding-top:60px;
+
+  
+    position:relative;
+}
+
+.motivation-timer{
+    position:absolute;
+    top:-2%;
+   left:-900px;
+   margin-top:10px;
+}
+
+
+.motivation-5min{
+  
+    flex-direction: column;
+    
+    gap:10px;
+}
+
+.motive-quote{
+    margin-left:30px;
+    margin-right:30px;
+}
+
+
+
+.min5-meditation{
+    width:500px;
+    
+     margin:auto;
+      margin-top:70px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 100px;
+
+     position:relative;
+
+}
+
+
+
+
+.meditation-timer{
+    position: absolute;
+    top:-5%;
+    left:-900px;
+   
+}
+
+
+
+
+.meditation-content{
+     width:100px;
+     height:100px;
+   position:absolute;
+   left:-55%;
+  
+  
+  
+}
+
+.meditaion-animation-text{
+  
+   margin-top:-40px;
+   
+   
+}
+
+
+.breathing-text{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+.emoji-game-section{
+    width:500px;
+    margin:auto;
+    margin-top:30px;
+    
+    position: relative;
+    padding-top:100px;
+}
+.game-timer{
+   position: absolute;
+   top:-2%;
+   left:-910px;
+}
+
+.emoji-game-heading{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+   
+}
+
+.hidden-emoji{
+    width:50px;
+    height:50px;
+    
+}
+
+.about-game{
+    font-size:14px;
+}
+
+
+.input-num{
+    width:150px;
+    text-align: center;
+    padding:5px;
+    font-size:12px;
+}
+
+
+.submit-btn{
+   
+    font-size:14px;
+    padding:10px;
+    border-radius: 5px;
+  
+}
+
+.gif-container img{
+     width:180px;
+     height:180px;
+}
+
+
+.result {
+   
+     font-size:14px;
+}
+
+.display-result{
+  
+     font-size:14px;
+}
+
+
+.min10-musics{
+    width:500px;
+    margin:auto;
+    
+   padding-top:70px;
+    margin-top:30px;
+   
+    position:relative;
+    
+   
+}
+
+.min10-song-timer{
+    position:absolute;
+    top:-2%;
+    left:-880px;
+}
+
+
+
+.min10-head{
+    font-size:25px;
+}
+
+
+
+
+.song-container-10min{
+    
+    flex-direction:column;
+   
+   gap:15px;
+   
+}
+
+.min10-excercise{
+   
+    width:500px;
+    margin:auto;
+    margin-top:50px;
+    
+    position:relative;
+    padding-top: 70px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.excercise-timer{
+    position: absolute;
+    top:-2%;
+    left:-900px;
+}
+
+.excercise-heading{
+    font-size:25px;
+}
+
+
+.excercise-10min{
+   
+    flex-direction: column;
+  
+    gap:15px;
+}
+
+
+.nap-section-break{
+   
+    width:500px;
+    margin:auto;
+    
+    padding-top:70px;
+    margin-top:50px;
+    padding-right:10px;
+    padding-left:10px;
+   
+    position:relative;
+}
+
+.nap-heading{
+    font-size:25px;
+}
+
+.nap-timer{
+    position:absolute;
+    top:-4%;
+    left:-900px;
+}
+
+.sleeping-image{
+   height:360px;
+   width:360px;
+
+}
+
+.alaram-section{
+   
+   
+    width:250px;
+    height:250px;
+  
+}
+
+.wake-up-gif{
+    width:250px;
+    height:250px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media(min-width:756px) and (max-width:1000px){
+
+
+   .left-section{
+     margin-left:20px;
+     padding-left:10px;
+
+   }
+    .logo{
+        width:45px;
+        height:45px;
+
+        
+    }
+    .name{
+        font-size:30px;
+       
+    }
+    .sub-title{
+        font-size:14px;
+       
+    }
+    
+  .nav-links{ 
+    gap:15px;
+}
+
+.link{
+    font-size:14px;
+}
+
+
+.opening-section{
+  
+    width:700px;
+   padding:15px;
+   border-radius: 10px;
+    
+}
+
+.opening{
+    font-size:35px;
+    margin-bottom: 10px;
+  
+}
+
+.purpose{
+    font-size:18px;
+    margin-top:0px;
+}
+
+.quote{
+    font-size:18px;
+}
+
+
+.need_of_breaks{
+    width:700px;
+    
+    
+}
+
+.breaks_heading{
+    margin-top:30px;
+    font-size:20px;
+    
+}
+
+.breaks-description{
+    font-size:18px;
+    margin-right:70px;
+    margin-left:70px;
+}
+
+.need-breaks-heading{
+    font-size: 35px;
+
+}
+
+.five-min-section{
+    
+    width:700px;
+    margin:auto;
+   margin-top:30px;
+}
+
+.five-min-heading{
+    font-size:35px;
+}
+
+.label{
+    font-weight:normal;
+    font-size:18px;
+}
+
+
+.features-box{
+    grid-template-columns:auto auto;
+    gap:15px; 
+   
+}
+
+
+.ten-nap-container{
+  
+    width:700px;
+   
+    grid-template-columns: auto ;
+    gap:20px;
+
+   
+}
+
+.ten-minute{
+    width:100%;
+   
+    margin-left:10px;
+   
+}
+
+.ten-min-features{
+
+    grid-template-columns: auto auto;
+   
+    gap:15px;
+    margin:auto;
+    margin-right: 20px;
+    padding-bottom:10px;
+   
+    
+}
+
+.songs-ten-sec, .brain-excer{
+   width:280px;
+}
+
+
+.brain-excer{
+    margin-left:20px;
+    
+}
+
+.nap-section{
+    
+    width:80%;
+    padding:20px;
+   margin:auto;
+
+}
+
+
+.min5-musics{
+    width:700px;
+  
+   position:relative;
+
+   
+}
+
+.time-container{
+    position:absolute;
+    top:-3%;
+    left:-780px;
+    margin-top:10px;
+
+
+}
+
+.time{
+   
+    padding:10px;
+    padding-right:10px;
+    padding-left:10px;
+    
+    font-size:15px;
+   
+    
+}
+
+.min5-head{
+    font-size:35px;
+    margin-top:40px;
+}
+
+.min5-about{
+    font-size:15px;
+    margin-bottom:20px;
+}
+
+
+
+
+.song-container-5min{
+   
+    flex-direction:column;
+   
+}
+
+.songs-5min{
+    background-color: white;
+
+    padding-left:15px;
+    padding-right:15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+audio{
+    margin-top:100px;
+    width:280px;
+}
+
+
+.min5-motivation{
+   
+    width:700px;
+  margin:auto;
+  margin-top:30px;
+  padding:15px 15px;
+  padding-top:60px;
+
+  
+    position:relative;
+}
+
+.motivation-timer{
+    position:absolute;
+    top:-2%;
+   left:-800px;
+   margin-top:10px;
+}
+
+
+.motivation-5min{
+  
+    flex-direction: column;
+    
+    gap:10px;
+}
+
+.motive-quote{
+    margin-left:30px;
+    margin-right:30px;
+}
+
+
+
+.min5-meditation{
+    width:700px;
+    
+     margin:auto;
+      margin-top:70px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 100px;
+
+     position:relative;
+
+}
+
+
+
+
+.meditation-timer{
+    position: absolute;
+    top:-5%;
+    left:-800px;
+   
+}
+
+
+
+
+.meditation-content{
+     width:100px;
+     height:100px;
+   position:absolute;
+   left:-28%;
+  
+  
+  
+}
+
+.meditaion-animation-text{
+  
+   margin-top:-40px;
+   
+   
+}
+
+
+.breathing-text{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+.emoji-game-section{
+    width:700px;
+    margin:auto;
+    margin-top:30px;
+    
+    position: relative;
+    padding-top:100px;
+}
+.game-timer{
+   position: absolute;
+   top:-2%;
+   left:-810px;
+}
+
+.emoji-game-heading{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+   
+}
+
+.hidden-emoji{
+    width:60px;
+    height:60px;
+    
+}
+
+.about-game{
+    font-size:16px;
+}
+
+
+.input-num{
+    width:200px;
+    text-align: center;
+    padding:5px;
+    font-size:16px;
+}
+
+
+.submit-btn{
+   
+    font-size:16px;
+    padding:10px;
+    border-radius: 5px;
+  
+}
+
+.gif-container img{
+     width:200px;
+     height:200px;
+}
+
+
+.result {
+   
+     font-size:14px;
+}
+
+.display-result{
+  
+     font-size:14px;
+}
+
+
+.min10-musics{
+    width:700px;
+    margin:auto;
+    
+   padding-top:70px;
+    margin-top:30px;
+   
+    position:relative;
+    
+   
+}
+
+.min10-song-timer{
+    position:absolute;
+    top:-2%;
+    left:-780px;
+}
+
+
+
+.min10-head{
+    font-size:35px;
+}
+
+
+
+
+.song-container-10min{
+    
+    flex-direction:column;
+   
+   gap:15px;
+   
+}
+
+.min10-excercise{
+   
+    width:700px;
+    margin:auto;
+    margin-top:50px;
+    
+    position:relative;
+    padding-top: 70px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.excercise-timer{
+    position: absolute;
+    top:-2%;
+    left:-800px;
+}
+
+.excercise-heading{
+    font-size:35px;
+}
+
+
+.excercise-10min{
+   
+    flex-direction: column;
+  
+    gap:15px;
+}
+
+
+.nap-section-break{
+   
+    width:700px;
+    margin:auto;
+    
+    padding-top:70px;
+    margin-top:50px;
+    padding-right:10px;
+    padding-left:10px;
+   
+    position:relative;
+}
+
+.nap-heading{
+    font-size:25px;
+}
+
+.nap-timer{
+    position:absolute;
+    top:-4%;
+    left:-800px;
+}
+
+.sleeping-image{
+   height:460px;
+   width:460px;
+
+}
+
+.alaram-section{
+   
+   
+    width:250px;
+    height:250px;
+  
+}
+
+.wake-up-gif{
+    width:250px;
+    height:250px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+}
+
+
+
+@media(min-width:1001px) and (max-width:1370px){
+
+
+
+
+.need_of_breaks{
+    width:1000px;
+    
+    
+}
+
+.breaks_heading{
+    margin-top:30px;
+    font-size:20px;
+    
+}
+
+.breaks-description{
+    font-size:18px;
+    margin-right:70px;
+    margin-left:70px;
+}
+
+.need-breaks-heading{
+    font-size: 40px;
+
+}
+
+
+
+
+.ten-nap-container{
+  
+    width:1000px;
+   
+    grid-template-columns: auto ;
+    gap:20px;
+
+   
+}
+
+.ten-minute{
+    width:100%;
+   
+    margin-left:10px;
+   
+}
+
+.ten-min-features{
+
+    grid-template-columns: auto auto;
+   
+    gap:15px;
+    margin:auto;
+    margin-right: 20px;
+    padding-bottom:10px;
+   
+    
+}
+
+
+
+.brain-excer{
+    margin-left:20px;
+    
+}
+
+.nap-section{
+    
+    width:80%;
+    padding:20px;
+   margin:auto;
+
+}
+
+}
+

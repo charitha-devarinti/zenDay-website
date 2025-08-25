@@ -1,0 +1,814 @@
+ body{
+    font-family:sans-serif;
+    margin:0;
+   
+}
+
+/* header Section */
+
+.header{
+    background-color: #f6f9fc;
+    height:80px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    box-shadow:3px 3px 5px rgba(0,0,0,0.1);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
+    
+}
+
+
+.left-section{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    gap:15px;
+    width:400px;
+    margin-left:100px;
+    
+    padding-left:35px;
+   
+
+}
+
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius: 30px;
+    animation: zoom-in-out 4s ease-in-out  infinite;
+   
+}
+
+@keyframes zoom-in-out{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+}
+
+.name{
+   background: linear-gradient( 91.7deg,  rgb(119, 134, 2) 6.9%, rgb(238, 29, 151) 49%, rgba(108,114,241,1) 90% );
+   ;
+     -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+font-family:Roboto,sans serif;
+}
+ 
+
+.sub-title{
+    margin-top:50px;
+     background: linear-gradient(to top right, blue, green);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+}
+
+.right-section{
+  
+   margin-right:40px;
+    width:500px;
+}
+
+.nav-links{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+   margin-top:30px;
+    
+}
+
+.link{
+    color:rgb(81, 81, 81);
+    font-weight:bold;
+    font-size:17px;
+    cursor:pointer;
+    transition:color 0.3s  text-decoration 0.3s ease;
+    font-family:open sans, sans serif;
+    text-decoration: none;
+}
+
+.link:hover{
+   color:rgb(31, 31, 246);
+   text-decoration: underline;
+}
+
+/*  opening section of time table page*/
+
+.about-timeTable{
+    margin:auto; 
+    margin-top:100px;
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    width:1000px;
+    text-align: center;
+   padding-top:10px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom:30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.time-table-text{
+    font-size:20px;
+}
+.time-table-heading{
+    font-size:40px;
+}
+
+/* stop watch timer */ 
+
+.zen-timer{
+    font-size:40px;
+    font-weight: bold;
+}
+
+
+.stopWatch-timer{
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+     width:800px;
+     margin:auto;
+     margin-top:50px;
+     text-align: center;
+    padding-top:10px;
+     border-radius: 15px;
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+     padding-bottom:30px;
+}
+
+.spended-time{
+    font-size:70px;
+    font-weight:bold;
+    margin-top:0;
+    margin-bottom:25px;
+   
+}
+
+/*
+
+.buttons-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    
+    
+}
+*/
+.start-button,.stop-button,.reset-button{
+    padding:15px 50px;
+    font-size:25px;
+    font-weight:bold;
+    border-radius: 30px;
+    border:none;
+    cursor: pointer;
+    background-color: #005f73;
+    color:white;
+    margin-left:15px;
+   
+}
+
+.start-button:hover,.stop-button:hover,.reset-button:hover{
+   
+      background-color: #014755;
+
+
+}
+
+.start-button[disabled],.stop-button[disabled],.reset-button[disabled]{
+     opacity: 0.5;
+  cursor: default;
+  color:black;
+}
+
+.reminder-text{
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:25px;
+}
+
+
+/*   Todo list */
+
+.todo-header{
+    text-align: center;
+    font-size:40px;
+}
+
+.todo-text{
+    text-align: center;
+    font-size:18px;
+}
+
+
+
+.whole-container{
+  
+     background: linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+     padding-bottom:50px;
+     padding-top:20px;
+     margin-top:50px;
+     margin-right:100px;
+     margin-left:100px;
+     margin-bottom:30px;
+     border-radius: 15px;
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+     
+}
+
+
+
+.inputButt-container{
+   
+    display:grid;
+    grid-template-columns: 400px 200px 150px  ;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding-top:30px;
+    margin-bottom:20px;
+
+    align-items: stretch;
+}
+
+.todo-list{
+    display: grid;
+    grid-template-columns: 50px 400px 200px 150px  ;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    
+}
+
+.input-list,.input-time{
+    padding:20px;
+    font-size:20px;
+    border-radius: 10px;
+}
+.add-button{
+    padding:20px;
+    font-size:20px;
+    color:white;
+    background-color: rgb(1, 64, 1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border:none;
+}
+
+.add-button:hover{
+    background-color: green;
+}
+
+.todo-name{
+    font-size: 20px;
+    font-weight:bold;
+    
+   
+}
+
+.todo-time{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.delete-button{
+    padding:10px;
+    font-size:18px;
+    color:white;
+    background-color: rgb(70, 1, 1);
+    cursor: pointer;
+    border:none;
+    transition: background-color 0.3s;
+}
+.delete-button:hover{
+    background-color: rgb(108, 1, 1);
+     
+}
+
+.check-box{
+    height:25px;
+    
+}
+
+.showMessage{
+  
+    color:red;
+    display:none;
+    margin:5px;
+     text-align: center;
+
+
+}
+
+
+/* footer section */
+.footer{
+    margin-top:30px;
+    background-color: rgb(246, 244, 244);
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:20px;
+    line-height:6px;
+}
+
+.footer-text{
+    font-size:16px;
+   
+}
+
+
+@media (max-width:500px){
+
+   .left-section{
+     margin-left:20px;
+     padding-left:10px;
+
+   }
+    .logo{
+        width:40px;
+        height:40px;
+
+        
+    }
+    .name{
+        font-size:25px;
+       
+    }
+    .sub-title{
+        font-size:12px;
+      
+       
+    }
+    
+
+  .nav-links{
+  
+    flex-direction:column;
+    gap:0px;
+    margin-top:5px;
+    margin-left: 60px; 
+}
+
+.link{
+   
+    font-weight:bold;
+    font-size:12px;
+}
+
+.about-timeTable{
+    margin:auto; 
+    margin-top:100px;
+    
+    width:300px;
+    
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.time-table-text{
+    font-size:16px;
+}
+.time-table-heading{
+    font-size:25px;
+}
+
+
+.zen-timer{
+    font-size:25px;
+    
+}
+
+
+.stopWatch-timer{
+   
+     width:300px;
+     margin:auto;
+     margin-top:30px;
+    
+}
+
+.spended-time{
+    font-size:35px;
+    
+}
+
+
+.start-button,.stop-button,.reset-button{
+    padding:10px 10px;
+    font-size:14px;
+   
+    border-radius: 15px;
+   
+    margin-left:15px;
+   
+}
+.reminder-text{
+   
+    font-size:14px;
+}
+
+
+.todo-header{
+    text-align: center;
+    font-size:25px;
+}
+
+.todo-text{
+    text-align: center;
+    font-size:14px;
+}
+
+
+
+.whole-container{
+    width:300px;
+     
+}
+
+
+
+.inputButt-container{
+   
+    display:grid;
+    grid-template-columns:auto  ;
+   
+    gap:10px;
+  
+    align-items: stretch;
+}
+
+.todo-list{
+    display: grid;
+    grid-template-columns: 20px 80px 80px 60px  ;
+ 
+    gap:10px;
+    
+}
+
+.input-list,.input-time{
+ 
+    font-size:14px;
+    padding:10px;
+   
+}
+.add-button{
+    padding:14px;
+    font-size:15px;
+ 
+}
+
+
+.todo-name{
+    font-size: 12px;
+   
+    
+   
+}
+
+.todo-time{
+    font-size:12px;
+   
+}
+
+.delete-button{
+    padding:10px;
+    font-size:12px;
+  
+}
+}
+
+@media(min-width:501px) and (max-width:755px){
+
+
+   .left-section{
+     margin-left:20px;
+     padding-left:10px;
+
+   }
+    .logo{
+        width:45px;
+        height:45px;
+
+        
+    }
+    .name{
+        font-size:30px;
+       
+    }
+    .sub-title{
+        font-size:16px;
+       
+       
+    }
+    
+
+  .nav-links{
+  
+    flex-direction:column;
+    gap:0px;
+    margin-top:5px;
+    margin-left: 70px; 
+}
+
+.link{
+    font-size:14px;
+}
+
+
+.about-timeTable{
+    margin:auto; 
+    margin-top:100px;
+    width:500px;
+}
+
+.time-table-text{
+    font-size:16px;
+}
+.time-table-heading{
+    font-size:30px;
+}
+
+
+.zen-timer{
+    font-size:30px;
+    
+}
+
+
+.stopWatch-timer{
+   
+     width:500px;
+     margin:auto;
+     margin-top:30px;
+    
+}
+
+.spended-time{
+    font-size:45px; 
+   
+}
+
+
+.start-button,.stop-button,.reset-button{
+    padding:15px 15px;
+    font-size:16px;
+   
+    border-radius: 15px;
+   
+    margin-left:15px;
+   
+}
+.reminder-text{
+   
+    font-size:14px;
+}
+
+
+.todo-header{
+   
+    font-size:30px;
+}
+
+.todo-text{
+    text-align: center;
+    font-size:14px;
+}
+
+
+
+.whole-container{
+    width:500px;
+    margin:auto;
+    margin-top:30px;
+     
+}
+
+
+
+.inputButt-container{
+   
+    display:grid;
+    grid-template-columns:auto  ;
+   
+    gap:10px;
+    align-items: stretch;
+}
+
+.todo-list{
+    display: grid;
+    grid-template-columns: 30px 150px 80px 80px  ;
+ 
+    gap:10px;
+    
+}
+
+.input-list,.input-time{
+ 
+    font-size:14px;
+    padding:10px;
+   
+}
+.add-button{
+    padding:14px;
+    font-size:15px;
+ 
+}
+
+
+.todo-name{
+    font-size: 16px;
+   
+    
+   
+}
+
+.todo-time{
+    font-size:14px;
+   
+}
+
+.delete-button{
+    padding:10px;
+    font-size:14px;
+  
+}
+
+
+}
+
+
+@media(min-width:756px) and (max-width:1120px){
+
+
+   .left-section{
+     margin-left:20px;
+     padding-left:10px;
+
+   }
+    .logo{
+        width:45px;
+        height:45px;
+
+        
+    }
+    .name{
+        font-size:30px;
+       
+    }
+    .sub-title{
+        font-size:14px;
+       
+       
+    }
+    
+
+  .nav-links{
+     
+    gap:15px;
+ 
+   
+}
+
+.link{
+   
+
+    font-size:14px;
+}
+
+
+
+.about-timeTable{
+    margin:auto; 
+    margin-top:100px;
+    width:700px;
+}
+
+.time-table-text{
+    font-size:16px;
+}
+.time-table-heading{
+    font-size:35px;
+}
+
+
+.zen-timer{
+    font-size:35px;
+    
+}
+
+
+.stopWatch-timer{
+   
+     width:700px;
+     margin:auto;
+     margin-top:30px;
+    
+}
+
+.spended-time{
+    font-size:70px; 
+   
+}
+
+
+.start-button,.stop-button,.reset-button{
+    padding:20px 30px;
+    font-size:18px;
+   
+    border-radius: 15px;
+   
+    margin-left:15px;
+   
+}
+.reminder-text{
+   
+    font-size:16px;
+}
+
+
+.todo-header{
+   
+    font-size:35px;
+}
+
+.todo-text{
+    text-align: center;
+    font-size:16px;
+}
+
+
+
+.whole-container{
+    width:700px;
+    margin:auto;
+    margin-top:30px;
+     
+}
+
+
+
+.inputButt-container{
+   
+    display:grid;
+    grid-template-columns:300px 150px 150px  ;
+   
+    gap:10px;
+    align-items: stretch;
+}
+
+.todo-list{
+    display: grid;
+    grid-template-columns: 30px 300px 100px 100px  ;
+ 
+    gap:10px;
+    
+}
+
+.input-list,.input-time{
+ 
+    font-size:16px;
+    padding:10px;
+   
+}
+.add-button{
+    padding:14px;
+    font-size:18px;
+ 
+}
+
+
+.todo-name{
+    font-size: 16px;
+   
+    
+   
+}
+
+.todo-time{
+    font-size:16px;
+   
+}
+
+.delete-button{
+    padding:10px;
+    font-size:14px;
+  
+}
+
+
+
+
+
+
+
+}

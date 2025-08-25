@@ -1,0 +1,703 @@
+/* header Section */
+
+.header{
+    background-color: #f6f9fc;
+    height:80px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    box-shadow:3px 3px 5px rgba(0,0,0,0.1);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
+    
+}
+
+
+.left-section{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    gap:15px;
+    width:400px;
+    margin-left:100px;
+    
+    padding-left:35px;
+   
+
+}
+
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius: 30px;
+    animation: zoom-in-out 4s ease-in-out  infinite;
+   
+}
+
+@keyframes zoom-in-out{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+}
+
+.name{
+   background: linear-gradient( 91.7deg,  rgb(119, 134, 2) 6.9%, rgb(238, 29, 151) 49%, rgba(108,114,241,1) 90% );
+   ;
+     -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+font-family:Roboto,sans serif;
+}
+ 
+
+.sub-title{
+    margin-top:50px;
+     background: linear-gradient(to top right, blue, green);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+}
+
+.right-section{
+  
+   margin-right:40px;
+    width:500px;
+}
+
+.nav-links{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+   margin-top:30px;
+    
+}
+
+.link{
+    color:rgb(81, 81, 81);
+    font-weight:bold;
+    font-size:17px;
+    cursor:pointer;
+    transition:color 0.3s  text-decoration 0.3s ease;
+    font-family:open sans, sans serif;
+    text-decoration: none;
+}
+
+.link:hover{
+   color:rgb(31, 31, 246);
+   text-decoration: underline;
+}
+
+/* about review section*/
+
+.about-review{
+    margin:auto; 
+    margin-top:100px;
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    width:1000px;
+    text-align: center;
+   padding-top:10px;
+    padding-bottom:30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.review-text{
+    font-size:25px;
+}
+
+.review-heading{
+    font-size:40px;
+}
+
+/*  emoji review section */
+
+.emoji-review{
+    text-align: center;
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% );  
+    width:1200px;
+    margin:auto;
+    padding-top:30px;
+    margin-top:30px;
+    padding-bottom:30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.emojis-section{
+    display: flex;
+    
+    justify-content: center;
+     text-align: center;
+    column-gap: 50px;
+
+   
+    
+}
+
+.emoji-pic{
+    width:70px;
+    height:70px;
+    border-radius:35px;
+    object-fit: cover;
+    transition: width 0.3s , height 0.3s;
+}
+
+.emoji-pic:active{
+    width:80px;
+    height:80px;
+}
+
+.emojies-button{
+    border:none;
+    border-radius:40px;
+    cursor: pointer;
+    margin-top:30px;
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% ); 
+    
+}
+
+.emoji-button:active{
+  
+  padding:100px;
+}
+
+.each-emoji{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+}
+
+.quote-motivation{
+    font-size:25px;
+}
+
+
+
+/* feedBAck section*/
+
+.feedback-container{
+    background:linear-gradient( 109.6deg,  rgba(250, 249, 220, 0.8) 11.2%, rgba(193, 234, 249, 0.8) 91.1% );  
+   
+    font-family:sans-serif;
+    margin-right:80px;
+    margin-left:80px;
+    margin-top:30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    padding-top:30px;
+}
+
+.noteapp-heading{
+    color:darkblue;
+     text-align: center;
+     font-size:35px;
+     padding-top:10px;
+}
+
+.info-text{
+    text-align: center;
+     color:darkblue;
+     font-size:18px;
+}
+
+.app{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    gap:40px;
+    justify-content: center;
+    padding:50px;
+}
+
+.note-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  background: #ff5252;
+}
+
+.note{
+    padding:17px;
+    width:100%;
+    border-radius: 15px;
+    resize:none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    font-size:18px;
+    height:200px;
+    color:darkblue;
+    font-weight:bold;
+    border: none;
+    outline:none;
+    background-color: rgba(255,255,255,0.3);
+    box-sizing: border-box;
+     padding-top: 35px; /* Space for delete button */
+}
+
+.note::placeholder{
+    color:gray;
+    opacity:50%;
+}
+
+.note:hover,.note:focus{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: all 300ms ease;
+}
+
+.btn{
+    height:200px;
+    border-color: rgba(255,255,255,0.37);
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 15px;
+    font-size:70px;
+    font-weight:700;
+    color:rgba(0,0,0,0.3);
+    cursor: pointer;
+   
+}
+
+.btn:hover,.direction:hover{
+    background-color: rgba(255,255,255,0.6);
+    color:rgba(0,0,0,0.6);
+     transition: all 300ms ease;
+
+}
+
+.direction{
+    font-size:12px;
+    color:gray;
+    opacity:50%;
+    display:block;
+  
+}
+
+
+/* footer section */
+.footer{
+    margin-top:30px;
+    background-color: rgb(246, 244, 244);
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:20px;
+    line-height:6px;
+}
+
+.footer-text{
+    font-size:16px;
+   
+}
+
+
+@media (max-width:500px){
+
+   .left-section{
+     margin-left:20px;
+     padding-left:10px;
+
+   }
+    .logo{
+        width:40px;
+        height:40px;
+
+        
+    }
+    .name{
+        font-size:25px;
+       
+    }
+    .sub-title{
+        font-size:12px;
+      
+       
+    }
+    
+
+  .nav-links{
+  
+    flex-direction:column;
+    gap:0px;
+    margin-top:5px;
+    margin-left: 60px; 
+}
+
+.link{
+   
+    font-weight:bold;
+    font-size:12px;
+}
+
+
+.about-review{
+    margin:auto; 
+    margin-top:100px;
+    width:300px;
+    
+}
+
+.review-text{
+    font-size:18px;
+}
+
+.review-heading{
+    font-size:25px;
+}
+
+
+.emoji-review{
+     
+    width:300px;
+    margin:auto;
+    margin-top:30px;
+    padding:10px 10px;
+   
+}
+
+.emojis-section{
+
+    column-gap: 10px;
+   
+}
+
+.emoji-pic{
+    width:30px;
+    height:30px;
+   
+}
+
+.emoji-pic:active{
+    width:35px;
+    height:35px;
+}
+
+
+.emojies-button{
+   padding:0;
+}
+
+
+.emoji-button:active{
+  
+  padding:20px;
+}
+
+
+
+.emoji-subtitle{
+    font-size:14px;
+}
+
+.quote-motivation{
+    font-size:18px;
+}
+
+
+.feedback-container{
+
+    width:300px;
+    padding:15px 15px;
+    margin-left:70px;
+
+    
+}
+
+.noteapp-heading{
+     font-size:25px;
+    
+   
+}
+
+.info-text{
+   
+     font-size:14px;
+}
+
+}
+
+
+@media(min-width:501px) and (max-width:755px){
+
+
+   .left-section{
+     margin-left:20px;
+     padding-left:10px;
+
+   }
+    .logo{
+        width:45px;
+        height:45px;
+
+        
+    }
+    .name{
+        font-size:30px;
+       
+    }
+    .sub-title{
+        font-size:16px;
+       
+       
+    }
+    
+
+  .nav-links{
+  
+    flex-direction:column;
+    gap:0px;
+    margin-top:5px;
+    margin-left: 70px; 
+}
+
+.link{
+   
+
+    font-size:14px;
+}
+
+
+.about-review{
+    margin:auto; 
+    margin-top:100px;
+    width:500px;
+    
+}
+
+.review-text{
+    font-size:18px;
+}
+
+.review-heading{
+    font-size:35px;
+}
+
+
+.emoji-review{
+     
+    width:500px;
+    margin:auto;
+    margin-top:30px;
+    padding:10px 10px;
+   
+}
+
+.emojis-section{
+
+    column-gap: 10px;
+   
+}
+
+.emoji-pic{
+    width:35px;
+    height:35px;
+   
+}
+
+.emoji-pic:active{
+    width:45px;
+    height:45px;
+}
+
+
+
+.emojies-button{
+   padding:0;
+}
+
+
+.emoji-button:active{
+  
+  padding:20px;
+}
+
+
+
+.emoji-subtitle{
+    font-size:16px;
+}
+
+.quote-motivation{
+    font-size:18px;
+}
+
+
+.feedback-container{
+
+    width:500px;
+    padding:15px 15px;
+  
+    margin-top:30px;
+ 
+    
+}
+
+.noteapp-heading{
+     font-size:30px;
+    
+   
+}
+
+.info-text{
+   
+     font-size:18px;
+}
+
+
+
+}
+
+
+
+@media(min-width:756px) and (max-width:1000px){
+
+
+   .left-section{
+     margin-left:20px;
+     padding-left:10px;
+
+   }
+    .logo{
+        width:45px;
+        height:45px;
+
+        
+    }
+    .name{
+        font-size:30px;
+       
+    }
+    .sub-title{
+        font-size:14px;
+       
+       
+    }
+    
+
+  .nav-links{
+     
+    gap:15px;
+ 
+   
+}
+
+.link{
+   
+
+    font-size:14px;
+}
+
+
+.about-review{
+    margin:auto; 
+    margin-top:100px;
+    width:700px;
+    
+}
+
+.review-text{
+    font-size:18px;
+}
+
+.review-heading{
+    font-size:40px;
+}
+
+
+.emoji-review{
+     
+    width:700px;
+    margin:auto;
+    margin-top:30px;
+    padding:10px 10px;
+   
+}
+
+.emojis-section{
+
+    column-gap: 10px;
+   
+}
+
+.emoji-pic{
+    width:40px;
+    height:40px;
+   
+}
+
+.emoji-pic:active{
+    width:50px;
+    height:50px;
+}
+
+
+
+.emojies-button{
+   padding:0;
+}
+
+
+.emoji-button:active{
+  
+  padding:20px;
+}
+
+
+
+.emoji-subtitle{
+    font-size:18px;
+}
+
+.quote-motivation{
+    font-size:20px;
+}
+
+
+.feedback-container{
+
+    width:700px;
+    padding:15px 15px;
+  
+    margin-top:30px;
+    margin-left:30px;
+ 
+    
+}
+
+.noteapp-heading{
+     font-size:30px;
+    
+   
+}
+
+.info-text{
+   
+     font-size:18px;
+}
+
+
+
+
+}
