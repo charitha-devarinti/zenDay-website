@@ -358,11 +358,11 @@ font-family:Roboto,sans serif;
     margin-top:5px;
     margin-left: 60px; 
 }
-
 .link{
    
     font-weight:bold;
-    font-size:12px;
+    font-size:6px;
+    text-decoration:underline;
 }
 
 .about-timeTable{

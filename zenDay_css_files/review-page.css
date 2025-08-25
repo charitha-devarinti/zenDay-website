@@ -348,7 +348,8 @@ font-family:Roboto,sans serif;
 .link{
    
     font-weight:bold;
-    font-size:12px;
+    font-size:6px;
+    text-decoration:underline;
 }
 
 
