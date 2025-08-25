@@ -315,6 +315,10 @@ font-family:Roboto,sans serif;
 
 @media (max-width:500px){
 
+.header{
+    height:auto;
+}
+
    .left-section{
      margin-left:20px;
      padding-left:10px;
