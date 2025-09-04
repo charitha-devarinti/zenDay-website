@@ -775,6 +775,10 @@ audio{
 
 @media (max-width:500px){
 
+.header{
+    height:auto;
+}
+
    .left-section{
      margin-left:20px;
      padding-left:10px;
@@ -808,8 +812,10 @@ audio{
 .link{
    
     font-weight:bold;
-    font-size:12px;
+    font-size:6px;
+    text-decoration:underline;
 }
+
 
 .opening-section{
   
